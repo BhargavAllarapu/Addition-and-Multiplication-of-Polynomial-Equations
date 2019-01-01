@@ -35,6 +35,7 @@ class Polynomial:
             lastnode.nextval = term
             return term
         return None
+    
     def __add__(self, rhs):
         polysum = Polynomial()
         nodeA = self.headval
@@ -55,6 +56,7 @@ class Polynomial:
                 nodeB = nodeB.nextval
             polysum.insertNode(coefficient, degree)
         return polysum
+    
     def __mul__(self, rhs):
         polymul = Polynomial()
         nodeA = self.headval
@@ -67,6 +69,7 @@ class Polynomial:
                 nodeB = nodeB.nextval
             nodeA = nodeA.nextval
         return polymul.termMultiply()
+    
     def termMultiply(self):
         nodeA = self.headval
         while nodeA is not None and nodeA.nextval is not None:
