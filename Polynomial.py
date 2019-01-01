@@ -115,6 +115,3 @@ if __name__ == '__main__':
     print("Sum"+"\t:"+str(sum.printPoly()))
     mul = li * li2 * li3
     print("Product"+"\t:"+str(mul.printPoly()))
-
-#Limts of Program
-#1. when polynomials are given in inordered form the result is effected
